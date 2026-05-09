@@ -1,0 +1,20 @@
+# Core LLM & LangChain
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langgraph>=0.1.0
+
+# LLM Providers (use one or more)
+langchain-groq>=0.1.0          # Groq (fast, free tier) — recommended
+langchain-openai>=0.1.0        # OpenAI (optional fallback)
+# ollama                       # Uncomment if using local Ollama
+
+# Vector Store
+chromadb>=0.5.0                # In-memory / persistent vector DB
+langchain-huggingface>=0.1.0   # Preferred HuggingFace integration (replaces community)
+sentence-transformers>=3.0.0   # Local HuggingFace embeddings (no API key needed)
+
+# Utilities
+python-dotenv>=1.0.0           # Load .env secrets
+pydantic>=2.0.0                # Structured output schemas
+numpy>=1.26.0                  # Cosine similarity helpers
